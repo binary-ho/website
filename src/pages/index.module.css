@@ -1,0 +1,73 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  /* background-image: url("../../static/img/cosmos.png"); */
+  /* background-size: cover; */
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.moneyInputContainerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: auto;
+}
+
+.moneyInputContainer {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50vw;
+  height: 10vh;
+  padding: 10px;
+  margin: 30px;
+
+  background-color: #F5F5F5;
+
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.moneyInput {
+  height: auto;
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  background-color: transparent;
+  font-size: 32px;
+  text-align: right;
+}
+
+.currencyUnitLabel {
+  margin: 0 20px;
+  font-size: 32px;
+  color: #333;
+  font-weight: bold;
+}
