@@ -14,8 +14,6 @@ input::-webkit-inner-spin-button {
   text-align: center;
   position: relative;
   overflow: hidden;
-  /* background-image: url("../../static/img/cosmos.png"); */
-  /* background-size: cover; */
 }
 
 @media screen and (max-width: 996px) {

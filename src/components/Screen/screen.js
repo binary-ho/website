@@ -1,18 +1,31 @@
 import React from 'react';
 import styles from './styles.module.css';
-
-// const ScreenWrapper = styled.div`
-//   width:100%;
-//   height:100%;
-//   scroll-snap-align:center;
-//   /* background-image: url(" ../../static/img/cosmos.png"); */
-//   background-image: url("../../");
-//   background-size: cover;
-// `
+import {backgroundImage} from "../../css/backgroundImage";
 
 export default function Screen({ children }) {
+  const style = {
+    padding: '4rem 0',
+    textAlign: 'center',
+    position: 'relative',
+    /* overflow: hidden; */
+
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+
+    width: '100%',
+    height: '100%',
+    // background-image: `url("../../../static/img/cosmos.png")`;
+    backgroundSize: 'cover',
+
+    scrollSnapStop:'always',
+    scrollSnapAlign: 'center',
+    scrollSnapType: 'y',
+    backgroundImage: backgroundImage.gradient2,
+  }
+
   return (
-    <div className={styles.screenWrapper}>
+    <div style={style}>
       {children}
     </div>
   )
